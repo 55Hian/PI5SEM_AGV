@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --corPrimaria: #BAF266;
+    --corSecundaria: #DAF280;
+    --corTerciaria: #F2F2F2;
+    --corQuartenaria: #595959;
+    --corQuintenaria: #0D0D0D; 
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--corQuintenaria);
+}
+
+body{
+    width: 95vw;
+    height: 95vh;
+    /* background-color: var(--corPrimaria); */
+    background-image: url(https://picsum.photos/2714/1916);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#containerCabecalho{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    /* align-items: ; */
+    border-radius: 0px 0px 25px 25px;
+    background-color: var(--corTerciaria);
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 5%;
+}
+
+#logo img{
+    width: 60px;
+    border-radius: 40px;
+}
+
+#links{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 5%;
+
+    font-size: 18pt;
+}
+
+#links ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right; 
+    
+}
+
+#links li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+}
+
+
+
+#links img{
+    height: 40px;
+    }
+
+#containerPrincipal{
+    width: 100%;
+    height: 95%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#titulo{
+    font-size: 40pt;
+    width: 100%;
+    height: 40%;
+
+    font-weight: 600;
+    color: var(--corQuintenaria);
+
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 20px; */
+}
+
+#requisicoes{
+    width: 100%;
+    height: 60%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20pt;
+
+    /* background-color: var(--corQuartenaria); */
+    border-radius: 25px;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.cardSolicitacao{
+    width: 200px;
+    height: 250px;
+    margin: 2%;
+
+    background-color: var(--corTerciaria);
+    border: 2px solid none;
+    border-radius: 5%;
+
+    color: var(--corQuintenaria);
+
+    text-align: center;
+    padding: 10px;
+
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    /* line-height: 10; */
+
+    cursor: pointer;
+}
+
+/* .cardSolicitacao:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+} */
+
+#containerFooter{
+
+    width: 100vw;
+    height: 5vh;
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: var(--corQuintenaria);
+    width: 100%;
+    
+}
+

@@ -1,0 +1,28 @@
+:root{
+    --corPrimaria: #BAF266;
+    --corSecundaria: #DAF280;
+    --corTerciaria: #F2F2F2;
+    --corQuartenaria: #595959;
+    --corQuintenaria: #0D0D0D; 
+}
+
+#logo{
+    width: 30%;
+}
+
+#links{
+    width: 30%;
+}
+
+h2{
+    width: 40%;
+    font-size: 18pt;
+    text-align: center;
+}
+
+#contido{
+    width: 100%;
+    height: 90%;
+    background-color: var(--corTerciaria);
+    border-radius: 25px;
+}

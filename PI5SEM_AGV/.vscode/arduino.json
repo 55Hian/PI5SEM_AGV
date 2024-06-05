@@ -1,0 +1,5 @@
+{
+    "board": "esp32:esp32:nodemcu-32s",
+    "port": "COM5",
+    "sketch": "PI5SEM_AGV.ino"
+}

@@ -1,0 +1,109 @@
+:root{
+    --corPrimaria: #BAF266;
+    --corSecundaria: #DAF280;
+    --corTerciaria: #F2F2F2;
+    --corQuartenaria: #595959;
+    --corQuintenaria: #0D0D0D; 
+
+    --alturamodal: 300px;
+    --larguramodal:400px;
+}
+
+#contido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 10px;
+}
+
+#cliente{
+    /* background-color: var(--corQuartenaria) ; */
+    width: 60%;
+    height: 75px;
+    margin: 10px;
+
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#cliente:first-of-type {
+    box-shadow: none;
+    height:20px;
+
+}
+
+.campoCliente{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cliente #idCliente{
+    width: 10%;
+}
+
+#cliente #nomeCliente{
+    width: 70%;
+    justify-content: left;
+}
+
+#cliente #editarCliente{
+    width: 10%;
+}
+
+#cliente img{
+    width: 30px;
+    height: 30px;
+}
+
+#cliente #apagarCliente{
+    width: 10%;
+}
+
+#cliente button{
+    background-color: none;
+    border: none;    
+}
+
+
+#overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0008;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.oculto{
+    display: none;
+}
+
+#modalCreate{
+    position: absolute;
+    top: calc(50% - (var(--alturamodal)/2));
+    left: calc(50% - (var(--larguramodal)/2));
+    width: var(--alturamodal);
+    height: var(--larguramodal);
+    background-color: white;
+    border-radius: 12px;
+    z-index: 2;
+
+}
+
+#modalUpdate{
+    position: absolute;
+    top: calc(50% - (var(--alturamodal)/2));
+    left: calc(50% - (var(--larguramodal)/2));
+    width: var(--alturamodal);
+    height: var(--larguramodal);
+    background-color: white;
+    border-radius: 12px;
+    z-index: 2;
+
+}

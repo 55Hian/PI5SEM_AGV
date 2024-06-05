@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ptBR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGV</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/telasGerenciamento.css">
+    <link rel="stylesheet" href="../style/usuarios.css">
+</head>
+<body>
+    <header id="containerCabecalho">
+        <div id="logo"><img src="https://media.licdn.com/dms/image/C4D0BAQF2nIpNK4FMpQ/company-logo_100_100/0/1651974426008?e=1722470400&v=beta&t=TmgCLDwx4ap78og6nr120Rpqx3yU5W0SC4y5do-IrxE" alt="logo"></div>
+        <h2>Gerenciar Usuarios</h2>
+        <div id="links">
+            <ul>
+                <li><button id="criarUsuario" onclick="criarUsuario()">Criar Usuario</button></li>          
+                <li><a href="../html/admin.html"><img src="../style/source/botao-voltar.png" alt=""></a></li>      
+            </ul>
+        </div>
+    </header>
+    <main id="containerPrincipal">
+        
+        <div id="contido">
+            
+            <div id="cliente">
+                <div class="campoCliente" id="idCliente">ID</div>
+                <div class="campoCliente" id="nomeCliente">Nome</div>
+                <div class="campoCliente" id="editarCliente"></div>
+                <div class="campoCliente" id="apagarCliente"></div>
+                </div>     
+
+                
+
+        </div>
+
+        <div id="produtos"></div>
+
+        <div id="overlay" class="oculto"></div>
+
+
+        <div id="modalCreate" class="modal oculto">
+            <h3>Formulario de cadastro</h3>
+            <!-- Formulario do create -->
+            <form action="" method="post">
+        
+                <div class="controle-form">
+                    <label for="nomeCliente">Nome:</label>
+                    <input type="text" id="nomeC" name="nomeCliente">
+                </div>
+
+                <div class="controle-form">
+                    <label for="senhaCliente">Senha:</label>
+                    <input type="password" id="senhaCliente" name="senhaCliente">
+                </div>
+        
+                <button type="button" id="cadastrar">Cadastrar</button>
+                <button type="reset" id="cancelarCadastro">Cancelar</button>
+    
+        
+            </form>
+        </div>
+
+        <div id="modalUpdate" class="modal oculto">
+            <form action="" method="post">
+        
+                <div class="controle-form">
+                    <label for="nomeCliente">Nome:</label>
+                    <input type="text" id="nomeClientePUT" name="nomeCliente">
+                </div>
+
+                <div class="controle-form">
+                    <label for="senhaCliente">Senha:</label>
+                    <input type="password" id="senhaClientePUT" name="senhaCliente">
+                </div>
+        
+                <button type="button" id="enviar">Enviar</button>
+                <button type="reset" id="cancelarEnvio">Cancelar</button>
+            </form>
+        </div>
+
+
+    </main>
+    <footer id="containerFooter">  	&copy; Hian A. Damaceno</footer>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="../script/usuarios.js"></script>
+</body>
+</html>
